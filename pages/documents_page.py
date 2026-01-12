@@ -29,7 +29,6 @@ class documentsPage():
 
     def get_referance_manual_version(self):
         expect(self.__guides_button).to_be_visible()
-
         buttons = self.__page.query_selector_all(self.__document_buttons_locator)
         button_text = buttons[0].text_content()
         before_index = button_text.index(" ")
